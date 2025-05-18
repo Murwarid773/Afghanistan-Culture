@@ -1,0 +1,275 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+
+    background-color: wheat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav ul {
+color: rgb(138, 37, 37);
+line-height: 1.6;
+list-style: none;
+display: flex;
+gap: 1.9rem;
+}
+ 
+nav a:hover {
+    color:rgb(214, 121, 45);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color:;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.subtitle {
+    font-size: 1,2rem;
+    color: #555;
+    font-style: italic;
+    text-shadow: 0dvw;
+}
+
+h1, h1 {
+    font-family:'Times New Roman', Times, serif;
+    background-color: wheat;
+    color: rgb(138, 37, 37);
+    line-height: 1.6;
+    font-size:x-large;
+    font-variant-position: normal;
+}
+ p {
+font-family:'Times New Roman', Times, serif;
+background-color: wheat;
+color: rgb(138, 37, 37);
+line-height: 1.6;
+font-size: larger;
+font-variant-position: normal;
+}
+
+.card-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.province-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing:border-box;
+    transition: transform 0.3;
+}
+
+.province-card:hover {
+    transform: translateY(-5px);
+}
+.province-card h1 {
+    margin top: 0;
+}
+.province-card p {
+    color:#555;
+}
+
+.City Gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.City Gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax( 250px , 1fr));
+    gap: 20px
+}
+
+.city-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.city-card .image-box {
+    width: 100%;
+    background: 150px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    line-height: 150px;
+    overflow: hidden;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.city-card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block;
+    border-radius: 8px;
+}
+.city-card:hover {
+    background: #333;
+    color: rgb(189, 113, 113);
+    transform: translateY(-5px);
+}
+
+.city-card:hover .image-box {
+
+    background: #555;
+    color:white;
+}
+
+
+.city-of-the-day {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+
+}
+
+.featured-city {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: burlywood;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba( 0, 0, 0, 0.1);
+}
+
+.featured-city:hover {
+    background-color: rgb(102, 102, 54);
+}
+
+.city-image {
+    flex: 1 1 300px;
+    max-width: 300px;
+    min-height: 250px;
+    overflow: hidden;
+    border-radius: 12px 0 0 12px;
+}
+
+.city-image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.featured-city:hover .city-image img {
+    transform: scale(1.05);
+}
+
+.city-info {
+
+    flex: 1 1 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: color 0,4s ease;
+}
+
+.city-info h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.city-info ul {
+    padding-left: 20px;
+    margin: 10px 0 0;
+}
+
+.featured-city:hover .city-info {
+    color: brown;
+}
+
+.submit-a-city {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: lightsalmon;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.1);
+}
+
+.submit-a-city h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submit-a-city-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.submit-a-city-form input,
+.submit-a-city-form textarea {
+
+    padding: 10px;
+    border: 1 px solid #333;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-a-city-form button {
+
+    padding: 10px 15px;
+    background-color: pink
+    color: (brown )
+    border: none;
+    border radius: 6px;
+    font-size: 1em;
+    cursor: pointer
+    transition: background-color 0.3s ease, transfrom 0.2 ease;
+}
+
+.submit-a-city-form button:hover {
+     background-color: brown;
+     transform: scale(1 0.3);
+}
+
+
